@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+while getopts u:p: options; do
+    case $options in 
+        u) user=$OPTARG;;
+        p) pass=$OPTARG;;
+    esac
+done
+
+echo "user $user / pass: $pass"
